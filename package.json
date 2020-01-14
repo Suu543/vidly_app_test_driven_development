@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "jest --watchAll --verbose --coverage --runInBand"
+  },
+  "engines": {
+    "node": "12.14.0"
   },
   "repository": {
     "type": "git",
@@ -32,6 +36,7 @@
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
+    "morgan": "^1.9.1",
     "supertest": "^4.0.2",
     "winston": "^3.2.1",
     "winston-daily-rotate-file": "^4.4.1"
